@@ -22,3 +22,6 @@ pandas
 scikit-learn
 seaborn
 matplotlib
+django
+gunicorn
+django-heroku
