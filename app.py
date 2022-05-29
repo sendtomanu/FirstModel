@@ -9,7 +9,7 @@ model = pickle.load(open('/Users/manbirsingh/Downloads/pythonProject/model.pkl',
 
 @app.route('/')
 def home():
-    # return 'Hello World'
+    # return 'Hello Manu World'
     return render_template('home.html')
 
 
