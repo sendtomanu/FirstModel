@@ -27,6 +27,7 @@ def predict():
     data = [float(x) for x in request.form.values()]
     final_features = [np.array(data)]
     print(data)
+    # check manu
 
     output = model.predict(final_features)[0]
     print(output)
