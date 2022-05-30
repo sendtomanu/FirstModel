@@ -10,7 +10,7 @@ six==1.15.0
 soupsieve==2.0.1
 urllib3==1.25.10
 
-gunicorn
+gunicorn==20.0.4
 #pickle
 numpy
 pandas
