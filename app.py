@@ -2,11 +2,12 @@ import pickle
 from flask import Flask, request, app, jsonify, url_for, render_template
 import numpy as np
 import pandas as pd
+import os
 
 
 app = Flask(__name__)
-model = pickle.load(open('/Users/manbirsingh/Downloads/pythonProject/model.pkl', 'rb'))
-
+model = pickle.load(open(os.path.dirname(__file__) + '/model.pkl', 'rb'))
+print("File Path :" + os.path.dirname(__file__) + '/model.pkl')
 
 @app.route('/')
 def home():
